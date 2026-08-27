@@ -11,20 +11,33 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <main class="stage">
-      <div class="grain" aria-hidden="true"></div>
-      <section class="bouquet-wrap" aria-label="粒子玫瑰动画">
-        <div class="halo halo-one"></div><div class="halo halo-two"></div>
-        <canvas id="bouquet" aria-label="一束正在盛放的粒子玫瑰"></canvas>
-        <div class="caption"><span>LIVE PARTICLE GARDEN</span><span id="paletteName">BLUSH ROSE</span></div>
-      </section>
+  <body class="article-page">
+    <main class="article-shell">
+      <article class="article-card">
+        <header class="article-head">
+          <p class="account-name">Ziyao 的小角落</p>
+          <h1>永不凋零的玫瑰花束</h1>
+          <p class="article-meta">原创 · 2026年8月27日</p>
+        </header>
 
-      <nav class="controls" aria-label="花束控制">
-        <button id="bloom" type="button"><span>↺</span> 重新盛开</button>
-        <button id="palette" type="button"><span>◌</span> 换一种颜色</button>
-      </nav>
-      <footer><span>FOR YOU, ALWAYS.</span><span>∞ NEVER WITHER</span></footer>
+        <section class="article-copy">
+          <p>有些花不需要被摘下，也不会因为时间而离开。</p>
+          <p>这一束由光点组成的玫瑰，会在屏幕里持续盛开。点击下方按钮，让它重新绽放，或换一种颜色。</p>
+        </section>
+
+        <section class="bouquet-wrap" aria-label="粒子玫瑰动画">
+          <div class="halo halo-one"></div><div class="halo halo-two"></div>
+          <canvas id="bouquet" aria-label="一束正在盛放的粒子玫瑰"></canvas>
+          <div class="caption"><span>LIVE PARTICLE GARDEN</span><span id="paletteName">BLUSH ROSE</span></div>
+        </section>
+
+        <nav class="controls" aria-label="花束控制">
+          <button id="bloom" type="button"><span>↺</span> 重新盛开</button>
+          <button id="palette" type="button"><span>◌</span> 换一种颜色</button>
+        </nav>
+        <p class="closing-line">愿它替你，把心意留得久一点。</p>
+        <footer><span>FOR YOU, ALWAYS.</span><span>∞ NEVER WITHER</span></footer>
+      </article>
     </main>
     <script src="app.js"></script>
   </body>

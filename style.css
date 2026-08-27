@@ -3,3 +3,24 @@
 @media(max-width:760px){.stage{display:flex;flex-direction:column;min-height:100svh;padding:28px 18px 20px}.masthead{padding-top:4vh}.eyebrow{margin-bottom:20px}h1{font-size:clamp(55px,16vw,84px);margin-bottom:22px}.intro{font-size:11px;line-height:1.8}.bouquet-wrap{min-height:52vh;height:56vw;min-height:430px;margin:0 -10px}.caption{bottom:18px;font-size:8px}.controls{display:grid;grid-template-columns:1fr 1fr;gap:8px;padding-top:13px}.controls button{padding:12px 8px;font-size:9px}.share{grid-column:1/-1;margin-left:0}.share span{font-size:15px}footer{margin-top:auto;padding-top:22px;font-size:8px}}
 @media(prefers-reduced-motion:reduce){canvas{opacity:.85}.halo{animation:none}}
 .bouquet-wrap{grid-column:1/-1}
+
+/* WeChat-style article reading layout */
+.article-page{background:#f2f2f2;color:#222;overflow-x:hidden}
+.article-shell{width:100%;max-width:720px;margin:0 auto;padding:34px 16px 54px}
+.article-card{background:#fff;min-height:100vh;padding:34px 34px 28px;box-shadow:0 1px 10px rgba(0,0,0,.04)}
+.article-head{padding:0 0 24px;border-bottom:1px solid #eeeeee}
+.account-name{margin:0 0 22px;color:#8b8b8b;font:13px/1.5 -apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif}
+.article-head h1{margin:0 0 13px;color:#222;font:600 31px/1.28 -apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:0}
+.article-meta{margin:0;color:#b2b2b2;font:12px/1.5 -apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif}
+.article-copy{padding:25px 0 4px;color:#3f3f3f;font:16px/1.9 -apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif}
+.article-copy p{margin:0 0 14px}
+.article-copy p:last-child{margin-bottom:0}
+.article-card .bouquet-wrap{grid-column:auto;min-height:420px;height:52vw;max-height:560px;margin:24px 0 18px;border-radius:2px;overflow:hidden;background:#080711}
+.article-card .halo-one{width:75%;height:75%}.article-card .halo-two{width:110%;height:110%}
+.article-card .caption{bottom:20px;left:20px;right:20px}
+.article-card .controls{display:flex;justify-content:center;border:0;padding:0;gap:10px}
+.article-card .controls button{border-color:#e5e5e5;color:#555;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;font-size:12px}
+.article-card .controls button:hover,.article-card .controls button:focus-visible{border-color:#e26a82;color:#b83e5e;background:#fff8fa}
+.closing-line{margin:28px 0 30px;text-align:center;color:#999;font:13px/1.8 -apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif}
+.article-card footer{border-top:1px solid #eeeeee;padding-top:18px;color:#b5b5b5;font-size:9px}
+@media(max-width:760px){.article-shell{padding:0}.article-card{padding:27px 18px 24px;box-shadow:none}.article-head h1{font-size:27px}.article-copy{font-size:15px;line-height:1.85}.article-card .bouquet-wrap{min-height:390px;height:116vw;margin-left:-2px;margin-right:-2px}.article-card .controls button{padding:10px 13px}.article-card footer{padding-top:16px}}
