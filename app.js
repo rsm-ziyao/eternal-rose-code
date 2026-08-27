@@ -134,7 +134,7 @@ function draw(now) {
 }
 
 document.querySelector('#bloom').onclick = () => { startedAt = performance.now(); };
-document.querySelector('#palette').onclick = () => { paletteIndex = (paletteIndex + 1) % palettes.length; paletteName.textContent = palettes[paletteIndex].name; };
+document.querySelector('#palette').onclick = () => { paletteIndex = (paletteIndex + 1) % palettes.length; if (paletteName) paletteName.textContent = palettes[paletteIndex].name; };
 window.addEventListener('resize', resizeCanvas);
 buildBouquet();
 resizeCanvas();
