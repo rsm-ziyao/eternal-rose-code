@@ -2,9 +2,9 @@ const canvas = document.querySelector('#bouquet');
 const ctx = canvas.getContext('2d', { alpha: false });
 const paletteName = document.querySelector('#paletteName');
 const palettes = [
-  { name: 'BLUSH ROSE', petal: ['#e93768', '#ff85a4', '#fff0f1'], leaf: ['#4e6959', '#d3dfd2'], stem: ['#294d3c', '#88a38b'], wrap: ['#4a132d', '#b44a6d'] },
-  { name: 'CRIMSON GOLD', petal: ['#a40f36', '#ee5d70', '#ffe0b6'], leaf: ['#586048', '#d0d4b9'], stem: ['#304c31', '#91a96b'], wrap: ['#431120', '#c34855'] },
-  { name: 'MOONLIT LILAC', petal: ['#743bb0', '#c58ce8', '#fae9ff'], leaf: ['#506873', '#cedde0'], stem: ['#315051', '#80a09f'], wrap: ['#32174b', '#a24d9f'] }
+  { name: 'Be cheerful', petal: ['#e93768', '#ff85a4', '#fff0f1'], leaf: ['#4e6959', '#d3dfd2'], stem: ['#294d3c', '#88a38b'], wrap: ['#4a132d', '#b44a6d'] },
+  { name: 'Be cheerful', petal: ['#a40f36', '#ee5d70', '#ffe0b6'], leaf: ['#586048', '#d0d4b9'], stem: ['#304c31', '#91a96b'], wrap: ['#431120', '#c34855'] },
+  { name: 'Be cheerful', petal: ['#743bb0', '#c58ce8', '#fae9ff'], leaf: ['#506873', '#cedde0'], stem: ['#315051', '#80a09f'], wrap: ['#32174b', '#a24d9f'] }
 ];
 
 let paletteIndex = 0;
