@@ -135,17 +135,6 @@ function draw(now) {
 
 document.querySelector('#bloom').onclick = () => { startedAt = performance.now(); };
 document.querySelector('#palette').onclick = () => { paletteIndex = (paletteIndex + 1) % palettes.length; paletteName.textContent = palettes[paletteIndex].name; };
-document.querySelector('#share').onclick = async () => {
-  const data = { title: '永不凋零的玫瑰花束', text: '给你一束永不凋零的花。', url: location.href };
-  if (navigator.share) {
-    try { await navigator.share(data); } catch (_) { /* cancelled */ }
-  } else {
-    await navigator.clipboard?.writeText(location.href);
-    document.querySelector('#share').innerHTML = '<span>✓</span> 链接已复制';
-    setTimeout(() => { document.querySelector('#share').innerHTML = '<span>↗</span> 分享这束花'; }, 2200);
-  }
-};
-
 window.addEventListener('resize', resizeCanvas);
 buildBouquet();
 resizeCanvas();
